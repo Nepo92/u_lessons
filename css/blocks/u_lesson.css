@@ -960,6 +960,42 @@
   border: 10px solid #7C7B85;
 }
 
+.like {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.like:hover {
+  -webkit-box-shadow: 2px 2px 5px rgba(39, 174, 96, 0.5);
+  box-shadow: 2px 2px 5px rgba(39, 174, 96, 0.5);
+}
+
+.dislike {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.dislike:hover {
+  -webkit-box-shadow: 2px 2px 5px rgba(255, 40, 79, 0.5);
+  box-shadow: 2px 2px 5px rgba(255, 40, 79, 0.5);
+}
+
+.send {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.send:hover .btn__content {
+  background-color: white;
+}
+
+.send:hover .btn__title .btn_title-text {
+  color: #481E8C !important;
+}
+
 @media (min-width: 375px) {
   .header__item h3 {
     margin-top: 42px;
@@ -1392,46 +1428,6 @@
   .send {
     max-width: 200px !important;
   }
-  .back:hover {
-    background-color: #481E8C;
-  }
-  .back:hover .btn_title-text {
-    color: white;
-  }
-  .back:hover::after {
-    position: absolute;
-    z-index: 2;
-    background-color: white !important;
-  }
-  .like {
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-  }
-  .like:hover {
-    -webkit-box-shadow: 2px 2px 5px rgba(39, 174, 96, 0.5);
-    box-shadow: 2px 2px 5px rgba(39, 174, 96, 0.5);
-  }
-  .dislike {
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-  }
-  .dislike:hover {
-    -webkit-box-shadow: 2px 2px 5px rgba(255, 40, 79, 0.5);
-    box-shadow: 2px 2px 5px rgba(255, 40, 79, 0.5);
-  }
-  .send {
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-  }
-  .send:hover .btn__content {
-    background-color: white;
-  }
-  .send:hover .btn__title .btn_title-text {
-    color: #481E8C !important;
-  }
   .comments__items .comment {
     margin-top: 24px !important;
   }
@@ -1495,6 +1491,17 @@
   }
   .content-nav__item:nth-child(2) {
     margin-top: 0;
+  }
+  .back:hover {
+    background-color: #481E8C;
+  }
+  .back:hover .btn_title-text {
+    color: white;
+  }
+  .back:hover::after {
+    position: absolute;
+    z-index: 2;
+    background-color: white !important;
   }
 }
 
