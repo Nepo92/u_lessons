@@ -719,9 +719,9 @@
   -ms-flex-align: center;
   align-items: center;
   min-width: auto;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .back .btn_title-text {
